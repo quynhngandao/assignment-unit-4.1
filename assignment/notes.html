@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <title>Unit 4, Part 1 Assignment</title>
+</head>
+
+<body>
+  <h1>Unit 4, Part 1 Assignment</h1>
+  <p>See console for output.</p>
+  
+  <p><b>NOTE:</b> Try to avoid unecessary steps in coding</p>
+  <pre><p style="padding: 10px; border: 1px solid black;">
+  <b>#8 original code:</b>
+  function isFirstLetter(letter, string) {
+    let firstLetter = string.charAt(0).toUpperCase();
+    if (letter.toUpperCase() === firstLetter) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  <b># 8 new code:</b>
+  function isFirstLetter(letter, string) {
+    let firstLetter = string.charAt(0).toUpperCase();
+    if (letter.toUpperCase() === firstLetter) {
+      return true;
+    }
+    return false;
+  }
+  </p></pre>
+
+  <p><b>NOTE:</b> Return neded to be after the loop run not before</p>
+  <pre><p style="padding: 10px; border: 1px solid black;">
+  <b>#9 original code:</b>
+  function sumAll(array) {
+    let sum = 0;
+    for (let arr = 0; arr < array.length; arr++) {
+      sum += array[arr];
+      return sum;
+    }
+  }
+
+  <b>#9 new code:</b>
+  function sumAll(array) {
+    let sum = 0;
+    for (let arr = 0; arr < array.length; arr++) {
+      sum += array[arr];
+    }
+    return sum;
+  }
+  </p></pre>
+
+  </p>
+  </pre>
+  <p><b>NOTE:</b> Try to avoid unecessary steps in coding</p>
+  <pre><p style="padding: 10px; border: 1px solid black;">
+  <b>#10 original code:</b>
+  function newArr(array) {
+    let posArr = array.filter(arr => arr > 0);
+    for (let arr of array) {
+      if (arr > 0) {
+        return arr;
+      } else {
+        return [];
+      }
+    }
+  }
+
+  <b>#10 new code:</b>
+  function posArr(array) {
+    return array.filter(arr => arr > 0);
+  }
+  </p></pre>
+
+</body>
+</html>
